@@ -182,6 +182,7 @@ solve(lp_model_2)
 
 # Extract the solution for Option 2
 solution_2 <- get.variables(lp_model_2)
+solution_2
 
 # Print the solution for Option 2
 cat("\nShipping Plan (Option 2):\n")
@@ -266,3 +267,4 @@ for (i in 1:num_sources) {
 cat("Total Equivalent Uniform Annual Cost (Option 3): $",
     round(get.objective(lp_model_3), 2), "\n")
 
+# This video explains this code: https://youtu.be/dUt_gbcoLQw
